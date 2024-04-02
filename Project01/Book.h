@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -26,5 +27,15 @@ public:
 		num_pag = 0;
 		author = "";
 		name = nm;
+	}
+
+	~Book()
+	{
+		cout<<"Calling destructor"
+	}
+
+	string convert() {
+		string s;
+		s += name + " autrhor " + author + " number of pages " + to_string(num_pag);
 	}
 };
