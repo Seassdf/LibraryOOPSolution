@@ -31,7 +31,7 @@ public:
 
 	~Book()
 	{
-		cout<<"Calling destructor"
+		cout << "Calling destructor";
 	}
 
 	string convert() {
