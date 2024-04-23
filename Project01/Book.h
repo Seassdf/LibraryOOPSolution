@@ -13,56 +13,26 @@ private:
 
 public:
 
-	Book() {
-		num_pag = 100;
-		author = "no name";
-		name = "No name";
-	}
+	Book();
 
-	Book(int n_p, string ath, string nm) {
-		num_pag = n_p;
-		author = ath;
-		name = nm;
-	}
+	Book(int n_p, string ath, string nm);
 
-	Book(string nm) {
-		num_pag = 0;
-		author = "";
-		name = nm;
-	}
+	Book(string nm);
 
-	~Book()
-	{
-		cout << "Calling destructor";
-	}
+	~Book();
 
-	string convert() {
-		string s;
-		s += name + " autrhor " + author + " number of pages " + to_string(num_pag);
-	}
 
-	string getName() {
-		return name;
-	}
-	void getName(string nm) {
-		name = nm;
-	}
+	string convert();
 
-	int getNumPag() {
-		return num_pag;
-	}
+	string getName();
 
-	int setNumPag(int p) {
-		if (p > 0) {
-			return p;
-		}
-	}
+	void getName(string nm);
 
-	string getAuthor() {
-		return author;
-	}
+	int getNumPag();
 
-	void setAuthor(string auth) {
-		author = auth;
-	}
+	int setNumPag(int p);
+
+	string getAuthor();
+
+	void setAuthor(string auth);
 };
